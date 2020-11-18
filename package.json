@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
+    "framer-motion": "^2.9.4",
     "react-dom": "^17.0.1",
     "reaxt": "0.0.0"
   }

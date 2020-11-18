@@ -24,7 +24,7 @@ button.FullscreenMenuToggler {
   justify-content: center;
   align-items: center;
 
-  background: #412eb5;
+  background: #221366;
   color: white;
 
   font-size: 2rem;
@@ -39,6 +39,28 @@ button.FullscreenMenuToggler {
 .FullscreenMenu li {
   display: block;
   margin: 0.5rem;
+  animation: slideInFromLeft 0.5s ease;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-1.5rem, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.FullscreenMenu a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.FullscreenMenu a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=css_transitions.31b2aa8d.css.map */

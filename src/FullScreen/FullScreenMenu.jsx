@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import "./FullScreenMenu.css";
+import "./FullscreenMenu.css";
+import { motion } from "framer-motion";
 
-export default function FullScreenMenu() {
+export default function FullscreenMenu() {
   const [open, setOpen] = useState(false);
 
   return (
@@ -10,7 +11,7 @@ export default function FullScreenMenu() {
       <ul>
         {["Home", "About us", "Portfolio", "Contact"].map((text, i) => {
           return (
-            <li key={i}>
+            <li key={i} style={{ animationDelay: `${100 * i}ms` }}>
               <a
                 href="#"
                 onClick={(e) => {
@@ -31,9 +32,38 @@ export default function FullScreenMenu() {
       >
         <svg width="2rem" height="2rem" viewBox="0 0 24 24">
           <g stroke="currentColor" strokeWidth={2}>
-            <line x1="0" y1="4" x2="24" y2="4" />
-            <line x1="0" y1="12" x2="24" y2="12" />
-            <line x1="0" y1="20" x2="24" y2="20" />
+            <motion.line
+              x1="0"
+              y1="4"
+              x2="24"
+              y2="4"
+              animate={{
+                x1: open ? 4 : 0,
+                x2: open ? 20 : 24,
+                y2: open ? 20 : 4,
+              }}
+            />
+            <motion.line
+              x1="0"
+              y1="12"
+              x2="24"
+              y2="12"
+              animate={{
+                x1: open ? 12 : 0,
+                x2: open ? 12 : 24,
+              }}
+            />
+            <motion.line
+              x1="0"
+              y1="20"
+              x2="24"
+              y2="20"
+              animate={{
+                x1: open ? 4 : 0,
+                x2: open ? 20 : 24,
+                y2: open ? 4 : 20,
+              }}
+            />
           </g>
         </svg>
       </button>

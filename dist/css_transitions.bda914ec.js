@@ -29839,7 +29839,7 @@ try {
         lineNumber: 9,
         columnNumber: 7
       }
-    }, " "), /*#__PURE__*/_react.default.createElement("div", {
+    }), /*#__PURE__*/_react.default.createElement("div", {
       className: (0, _classnames.default)("searchbar", {
         "is-open": open
       }),
@@ -30764,11 +30764,11 @@ try {
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = FullScreenMenu;
+  exports.default = FullscreenMenu;
 
   var _react = _interopRequireWildcard(require("react"));
 
-  require("./FullScreenMenu.css");
+  require("./FullscreenMenu.css");
 
   var _jsxFileName = "/Users/efe/Desktop/native/css_transitions/src/FullScreen/FullScreenMenu.jsx";
 
@@ -30776,7 +30776,7 @@ try {
 
   function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-  function FullScreenMenu() {
+  function FullscreenMenu() {
     const [open, setOpen] = (0, _react.useState)(false);
     return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, open && /*#__PURE__*/_react.default.createElement("div", {
       className: "FullscreenMenu",
@@ -30796,6 +30796,9 @@ try {
     }, ["Home", "About us", "Portfolio", "Contact"].map((text, i) => {
       return /*#__PURE__*/_react.default.createElement("li", {
         key: i,
+        style: {
+          animationDelay: `${100 * i}ms`
+        },
         __self: this,
         __source: {
           fileName: _jsxFileName,
@@ -30887,6 +30890,6 @@ try {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"c3469d175e6ab91a6ebac2096f1b2459","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"304bfcdf97c182c258933a329c4fc1cd","./FullScreenMenu.css":"777245c844060737dc347664dbcdb0ba"}],"777245c844060737dc347664dbcdb0ba":[function() {},{}]},{},["dcc26616556d3fa39c7fe2f74af60a33","b0025b4f324d77554cb79cd8dfbefcdb"], null)
+},{"react":"c3469d175e6ab91a6ebac2096f1b2459","./FullscreenMenu.css":"cefeb7d7b2f7bdae716f3a2ddeabf926","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"304bfcdf97c182c258933a329c4fc1cd"}],"cefeb7d7b2f7bdae716f3a2ddeabf926":[function() {},{}]},{},["dcc26616556d3fa39c7fe2f74af60a33","b0025b4f324d77554cb79cd8dfbefcdb"], null)
 
 //# sourceMappingURL=css_transitions.bda914ec.js.map
